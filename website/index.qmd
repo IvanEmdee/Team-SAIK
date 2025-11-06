@@ -1,0 +1,49 @@
+---
+title: Elevator Wipeout - Sidecars and PBRs - Fall 2024
+---
+
+Elevator Wipeout is a save-the-world game where the player does all they can to prevent bad guys from destroying a space elevator.
+
+## Game Description
+
+Provide more details of the game.  Discuss any unique game play features.  Why is
+this game different from others?  What is the goal for playing?
+
+::: {layout-ncol="2"}
+![](assets/elevator-location.jpg)
+
+![](assets/elevator-view.jpg)
+:::
+
+## Important Links
+
+- Game URL: < ... >
+- GITHUB URL: < ... >
+- Gameplay Video URL: < ... >
+- Google Doc writeup: < ... >
+
+## Credits
+
+* Where did you get any resources? This might include sprites, images, sound, video, and any other assets.
+* Was this game inspired by another game? 
+* What role did the author(s) play in developing the game?
+
+## About this document
+
+This document was created using Quarto.  The source file is *./website/index.qmd*.
+
+* [More about quarto](https://quarto.org)
+* [Getting started with Quarto](https://quarto.org/docs/get-started/)
+* [Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+The *index.qmd* file can be edited using VS Code or any other text editor.
+
+Quarto works on both PC and macs.
+
+This folder was set up so that when the *index.qmd* file is *rendered*, the output
+is stored in the *./docs* folder.
+
+[GH-Pages](https://pages.github.com/), a feature of GITHUB is used to display the web content. EVERY GITHUB repository can use gh-pages to store documentation.
+
+[Quarto and GH Pages](https://quarto.org/docs/publishing/github-pages.html) co-exist 
+beautifully.  This folder has been setup so that your project is all set to go!

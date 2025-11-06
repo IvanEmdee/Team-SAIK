@@ -1,0 +1,15 @@
+project:
+  output-dir: ../docs
+
+author:
+  - name: John Leonard
+    email: jdleonard@vcu.edu
+  - name: Jason Bennett
+    email: jebennett@vcu.edu
+
+format:
+  html:
+    toc: true
+    embed-resources: true
+    html-math-method: katex
+    theme: cosmo
