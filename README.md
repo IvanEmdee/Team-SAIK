@@ -1,21 +1,30 @@
-# Elevator Wipeout - Sidecars and PBRs - Fall 2024
+# Team SAIK - En Carde
 
-Elevator Wipeout is a save-the-world game where the player does all they can to prevent bad guys from destroying a space elevator.  If the bad guys win, the earth
-is destroyed in a spectacular, slow-motion extravaganza.
-
-This repo contains our work on the four-person game development projects for GameDev.
+This will be our game developed in UNITY. It is a Single Player Deck-Builder, rouguelike and dungeon crawler. As a Thief explore a dungeon to make money. Your goal is to defeat any enemies on your way to the relic in the depths of the dungeon.
 
 ## Authors
 
-- John Leonard (jdleonard@vcu.edu)
-- Jason Bennett (jebennett@vcu.edu)
-- Skippy McBoatface (skippy@mcboatface.com)
-- MF Broom (mfbroom@rva.com)
+- Ashen (Art)
+- Ken (CS)
+- Ivan (CS)
+- Steven (CS)
+
+## Roles
+
+| Name   | Roles                         |
+| ------ | ----------------------------- |
+| Ashen  | 2D Artist                     |
+| Ken    | UI Designer/Gameplay Engineer |
+| Ivan   | Gameplay Engineer             |
+| Steven | Gameplay Engineer             |
 
 ## Game Description
 
-Provide more details of the game.  Discuss any unique game play features.  Why is
-this game different from others?  What is the goal for playing?
+- What makes our game unique is combining real time combat with deck building.
+- The game will be on PC using keyboard inputs.
+- For our audience we hope to combine those who like the strategy of Deck Builders with the fast paced style of real time dungeon crawlers.
+- For out visual style we wanted to go with something bright since in our previous games we have all done dark and gloomy.
+- For our MVP game loop we are aiming to have a basic room with enemies that we can kill with a card
 
 ## Important Links
 
@@ -23,32 +32,3 @@ this game different from others?  What is the goal for playing?
 - GITHUB URL: < ... >
 - Gameplay Video URL: < ... >
 - Google Doc writeup: < ... >
-
-## Files in the repository
-
-./unity/ - this folder contains the Unity game files associated with this game.
-
-./website/ - this folder contains files associated with the *gh-pages* created for this game.
-
-./docs/ - Don't edit files in this folder directly.  Edit the source documents in the *./website* folder, then use `quarto` to render the documents to HTML and store them in the *./docs* folder.
-
-
-## How to modify this README.md
-
-Certainly you want to customize the info above this section to make it your own. But, please don't stop there.
-
-To learn more about writing good README.md files, see:
-
-<https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/>
-
-This is a scaffold project. We’ll be providing scaffolds throughout the
-semester to get you working faster, and to make grading much easier for
-the TA team.
-
-This repository supports Homework 6. Here are the homework specs and
-tasks:
-
-<https://virginiacommonwealth.instructure.com/courses/105808/assignments/952983>
-
-Good luck!
-
