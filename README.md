@@ -18,6 +18,7 @@ This will be our game developed in UNITY. It is a Single Player Deck-Builder, ro
 | Ivan   | Gameplay Engineer             |
 | Steven | Gameplay Engineer             |
 
+
 ## Game Description
 
 - What makes our game unique is combining real time combat with deck building.
