@@ -41,11 +41,11 @@ public class Enemy : MonoBehaviour
         }
 
         // test kill
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             BossHealth bossHealth = GetComponent<BossHealth>();
             if (bossHealth != null)
-                bossHealth.TakeDamage(10);
+                bossHealth.TakeDamage(5);
         }
     }
 
