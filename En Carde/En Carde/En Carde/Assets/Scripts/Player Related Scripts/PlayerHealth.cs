@@ -83,7 +83,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Died!");
-        DeathScreen deathScreen = FindObjectOfType<DeathScreen>();
+        DeathScreen deathScreen = FindFirstObjectByType<DeathScreen>();
         if (deathScreen != null)
             deathScreen.ShowDeathScreen();
     }

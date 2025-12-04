@@ -6,7 +6,7 @@ public class PickupWin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            WinScreen winScreen = FindObjectOfType<WinScreen>();
+            WinScreen winScreen = FindFirstObjectByType<WinScreen>();
             if (winScreen != null)
                 winScreen.ShowWinScreen();
 
