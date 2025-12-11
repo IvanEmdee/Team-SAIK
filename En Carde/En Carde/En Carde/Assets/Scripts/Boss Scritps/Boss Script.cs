@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -16,11 +17,13 @@ public class Enemy : MonoBehaviour
     private float shootTimer = 0f;
 
     private Rigidbody2D rb;
+    
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        //This makes the boss clip through obsticles
+        //rb.bodyType = RigidbodyType2D.Kinematic;
         rb.freezeRotation = true;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -40,13 +43,15 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        // test kill
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        // test kill 
+        /**
+        if (Input.GetKeyDown(KeyCode.K))
         {
             BossHealth bossHealth = GetComponent<BossHealth>();
             if (bossHealth != null)
                 bossHealth.TakeDamage(5);
         }
+        **/
     }
 
     void FixedUpdate()
@@ -76,5 +81,15 @@ public class Enemy : MonoBehaviour
             Instantiate(spawnOnDeathPrefab, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
+    }
+    public async Task TakeDamage(int amount)
+    {
+
+        Debug.Log("Checking for boss");
+        BossHealth bossHealth = GetComponent<BossHealth>();
+            if (bossHealth != null)
+                bossHealth.TakeDamage(5);
+
+
     }
 }

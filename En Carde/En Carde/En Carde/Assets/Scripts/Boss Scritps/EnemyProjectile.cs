@@ -5,7 +5,7 @@ public class EnemyProjectile : MonoBehaviour
     public float speed = 5f;                 // Projectile speed
     public float homingStrength = 2f;        // How fast it adjusts toward the player
     public float lifetime = 5f;              // Automatically destroy after some time
-
+    public int damage = 20;
     private Transform player;
 
     //(Steven) adding sprites for animation on projectile
@@ -47,7 +47,8 @@ public class EnemyProjectile : MonoBehaviour
             PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(10);
+                //Testing iFrame (Steven)
+                playerHealth.TryTakeDamage(damage);
             }
 
             Destroy(gameObject);

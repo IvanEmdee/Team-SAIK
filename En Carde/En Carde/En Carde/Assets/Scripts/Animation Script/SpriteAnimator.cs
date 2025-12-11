@@ -33,7 +33,6 @@ public class SpriteAnimator
             currentFrame = (currentFrame + 1) % frame.Count;
             spriteRenderer.sprite = frame[currentFrame];
             timer -= frameRate;
-            Debug.Log("reached innner update");
         }
     }
     public List<Sprite> Frames

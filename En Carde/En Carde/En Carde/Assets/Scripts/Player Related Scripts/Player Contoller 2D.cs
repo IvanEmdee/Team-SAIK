@@ -8,12 +8,18 @@ public class PlayerController2D : MonoBehaviour
     public bool canMoveDiagonally = true; // Controls whether the player can move diagonally
 
     // Private variables 
-    private Rigidbody2D rb; // Reference to the Rigidbody2D component attached to the player
+    public Rigidbody2D rb { get; private set; }// Reference to the Rigidbody2D component attached to the player
     private Vector2 movement; // Stores the direction of player movement
     private bool isMovingHorizontally = true; // Flag to track if the player is moving horizontally
 
+    public bool disableMovement = false;
     //variable for animator
     private CharacterAnimator animator;
+
+    //Audio Manager is here (Steven)
+    [SerializeField] playerAudio audio;
+    [SerializeField] float stepInterval = 0.35f;
+    private float stepTimer = 0f;
 
     void Start()
     {
@@ -31,6 +37,7 @@ public class PlayerController2D : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Update is being called");
         // Get player input from keyboard or controller
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
@@ -38,6 +45,21 @@ public class PlayerController2D : MonoBehaviour
         // Check if diagonal movement is allowed
         if (canMoveDiagonally)
         {
+            //audio logic so it doesn't spam the audio
+            if (movement != Vector2.zero)
+                {
+                    stepTimer -= Time.deltaTime;
+
+                    if (stepTimer <= 0f)
+                    {
+                        audio.playStep();
+                        stepTimer = stepInterval;
+                    }
+                }
+                else
+                {
+                    stepTimer = 0f;
+                }
             // Set movement direction based on input
             movement = new Vector2(horizontalInput, verticalInput);
             // Optionally rotate the player based on movement direction
@@ -74,7 +96,9 @@ public class PlayerController2D : MonoBehaviour
     void FixedUpdate()
     {
         // Apply movement to the player in FixedUpdate for physics consistency
-        rb.linearVelocity = movement * speed;
+        if (!disableMovement)
+            rb.linearVelocity = movement * speed;
+
         
         //(Steven) This is the animation movement update so that animation can be played base on the x and y value
         animator.IsMoving = movement != Vector2.zero;
@@ -91,5 +115,9 @@ public class PlayerController2D : MonoBehaviour
         //float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
         // Apply the rotation to the player
         //transform.rotation = Quaternion.Euler(0, 0, angle);
+    }
+    public Vector2 GetMovementDirection()
+    {
+        return movement;
     }
 }

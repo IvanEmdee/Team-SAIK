@@ -36,18 +36,9 @@ public class DeathScreen : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-
-        // Return to main menu
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            Time.timeScale = 1f;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            SceneManager.LoadScene("MainMenu");
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
+            SceneManager.LoadScene("TitleScreen");
         }
     }
 }

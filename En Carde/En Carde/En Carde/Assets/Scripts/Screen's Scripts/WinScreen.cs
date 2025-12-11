@@ -34,6 +34,6 @@ public class WinScreen : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1f; // unfreeze
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("TitleScreen");
     }
 }

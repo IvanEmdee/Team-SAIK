@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using System.Threading.Tasks;
 
 public class BossHealth : MonoBehaviour
 {
@@ -18,8 +19,10 @@ public class BossHealth : MonoBehaviour
         OnHealthChanged?.Invoke(currentHealth, maxHealth); // Initialize UI
     }
 
-    public void TakeDamage(int damage)
+    public async void TakeDamage(int damage)
     {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        sr.color = Color.red;
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
@@ -29,6 +32,8 @@ public class BossHealth : MonoBehaviour
         {
             Die();
         }
+        await Task.Delay(1000);
+        sr.color = Color.white;
     }
 
     void Die()
