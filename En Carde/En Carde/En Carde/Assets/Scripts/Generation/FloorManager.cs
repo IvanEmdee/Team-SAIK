@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -28,7 +29,7 @@ public class FloorManager : MonoBehaviour
     {
         if (enemyPrefab == null)
             return;
-        
+
         foreach (var room in rooms)
         {
             int x = rng.Next(room.bounds.xMin + 1, room.bounds.xMax - 1);
@@ -49,3 +50,4 @@ public class FloorManager : MonoBehaviour
         }
     }
 }
+

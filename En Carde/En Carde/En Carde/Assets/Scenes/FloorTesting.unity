@@ -324,9 +324,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TilemapPainter
   floorTilemap: {fileID: 404293147}
   wallTilemap: {fileID: 1093305823}
+<<<<<<< HEAD
   roomFloorTile: {fileID: 11400000, guid: 66c2e19f607a44bcd88bd4c9aeca6d6f, type: 2}
   corridorTile: {fileID: 11400000, guid: c668c518b586ad64f8ccf68a2765cd09, type: 2}
   wallTile: {fileID: 11400000, guid: 0a7a9d6238f5aa54bb45dd3b9fd13db7, type: 2}
+=======
+  doorTilemap: {fileID: 2025381996}
+  roomFloorTile: {fileID: 11400000, guid: c9f337f50cf631d4685745b2a59ba82b, type: 2}
+  corridorTile: {fileID: 11400000, guid: dfd2fc83b6162b74f85fac3b2a1b1119, type: 2}
+  wallTile: {fileID: 11400000, guid: 97a4793bb17d4b046a58dc0844d029ec, type: 2}
+  doorTile: {fileID: 11400000, guid: 73e9615609d5d8e4596e098ba363bd42, type: 2}
+>>>>>>> 56b884bb4204032d69c8741ce5b1b35397ecf1f3
 --- !u!4 &489391411
 Transform:
   m_ObjectHideFlags: 0
@@ -355,9 +363,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloorManager
   painter: {fileID: 489391410}
+<<<<<<< HEAD
   playerPrefab: {fileID: 1372860613515117155, guid: 0d163251d30b12746a1c718689d8f569, type: 3}
   enemyPrefab: {fileID: 1796462227054842259, guid: fbbb0005cfc65f5479943a5aed4f7a57, type: 3}
   torchPrefab: {fileID: 6574533681597791866, guid: 309752c553949cc4994640b9939e784d, type: 3}
+=======
+>>>>>>> 56b884bb4204032d69c8741ce5b1b35397ecf1f3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,9 +601,12 @@ GameObject:
   - component: {fileID: 1093305821}
   - component: {fileID: 1093305823}
   - component: {fileID: 1093305822}
+<<<<<<< HEAD
   - component: {fileID: 1093305824}
   - component: {fileID: 1093305826}
   - component: {fileID: 1093305825}
+=======
+>>>>>>> 56b884bb4204032d69c8741ce5b1b35397ecf1f3
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -708,6 +722,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
 --- !u!19719996 &1093305824
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -820,6 +835,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+=======
+>>>>>>> 56b884bb4204032d69c8741ce5b1b35397ecf1f3
 --- !u!1 &2025381993
 GameObject:
   m_ObjectHideFlags: 0

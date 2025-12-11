@@ -29,7 +29,6 @@ This will be our game developed in UNITY. It is a Single Player Deck-Builder, ro
 
 ## Important Links
 
-- Game URL: < ... >
-- GITHUB URL: < ... >
-- Gameplay Video URL: < ... >
-- Google Doc writeup: < ... >
+- Game URL: < [En Carde](https://play.unity.com/en/games/579d92fe-0dda-4c8a-970f-bed45cfb7c98/en-carde-mvp) >
+- Gameplay Video URL: < [Youtube Video](https://drive.google.com/file/d/13RN7fpt-gep3Oa02U7PUEHIdZ0dsxrTp/view?usp=sharing) >
+- Google Doc writeup: < [Overview Document](https://docs.google.com/document/d/1_TlsvQ6ZCBIWJi2lbphdnk6cf04mQxWRO6YLi5C5qsE/edit?usp=sharing) >
